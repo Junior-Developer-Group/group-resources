@@ -145,16 +145,16 @@ export default {
                   category: 'PDF',
                   title: 'Introduction to: Basic SEO',
                   description: '',
-                  image: '/assets/images/resources-images/introduction__basic-seo.png',
-                  downloadURL: '/resources/presentations/IntroductionTo_ BasicSEO.pdf' 
+                  image: '/src/assets/images/resources-images/introduction__basic-seo.png',
+                  downloadURL: '/src/assets/resources/presentations/IntroductionTo_ BasicSEO.pdf' 
               },
 
               {
                   category: 'PDF',
                   title: 'Introduction to: GDPR',
                   description: '',
-                  image: '/assets/images/resources-images/presentation__gdpr.png',
-                  downloadURL: '/resources/presentations/IntroductionTo_ GDPR.pdf'
+                  image: '/src/assets/images/resources-images/presentation__gdpr.png',
+                  downloadURL: '/src/assets/resources/presentations/IntroductionTo_ GDPR.pdf'
               },
           ],
 
@@ -163,15 +163,15 @@ export default {
                   category: 'PDF',
                   title: 'New Member Welcome Pack',
                   description: '',
-                  image: '/assets/images/resources-images/new-member-onboarding__thumbnail.png',
-                  downloadURL: '/resources/presentations/new-member-onboarding.pdf' 
+                  image: '/src/assets/images/resources-images/new-member-onboarding__thumbnail.png',
+                  downloadURL: '/src/assets/resources/presentations/new-member-onboarding.pdf' 
               },
               {
                   category: 'PDF',
                   title: 'Ticket Management',
                   description: '',
-                  image: '/assets/images/resources-images/ticket-management__thumbnail.png',
-                  downloadURL: '/resources/presentations/ticket-management.pdf' 
+                  image: '/src/assets/images/resources-images/ticket-management__thumbnail.png',
+                  downloadURL: '/src/assets/resources/presentations/ticket-management.pdf' 
               },
           ]
       }
