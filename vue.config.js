@@ -1,7 +1,10 @@
 module.exports = {
   publicPath: '/group-resources/',
+
   transpileDependencies: [
     'vuetify'
   ],
-  productionSourceMap: false
+
+  productionSourceMap: false,
+  outputDir: 'docs'
 }
