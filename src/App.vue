@@ -164,7 +164,7 @@ export default {
                   title: 'New Member Welcome Pack',
                   description: '',
                   image: './assets/images/resources-images/new-member-onboarding__thumbnail.png',
-                  downloadURL: '/assets/resources/presentations/new-member-onboarding.pdf' 
+                  downloadURL: './assets/resources/presentations/new-member-onboarding.pdf' 
               },
               {
                   category: 'PDF',
