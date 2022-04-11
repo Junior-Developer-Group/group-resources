@@ -35,29 +35,56 @@
 
             <!--- CARD TEXT --->
                 <v-card-text class="pt-6" style="position:relative;">
-                  <v-tooltip bottom>
-                      <template v-slot:activator="{ on, attrs }">
-                            <v-btn 
-                                absolute 
-                                color="teal" 
-                                class="white--text" 
-                                fab 
-                                 
-                                right 
-                                top
-                                v-bind="attrs"
-                                v-on="on"
-                            >
-                                
-                                <a :href="resource.downloadURL" :download="resource.title" style="color:white">
-                                    <v-icon dark>
-                                        mdi-download
-                                    </v-icon>
-                                </a>
-                            </v-btn>
-                      </template>
-                      <span> Download {{resource.title}}</span>
-                  </v-tooltip>
+                    <v-row>
+                        <v-tooltip bottom>
+                            <template v-slot:activator="{ on, attrs }">
+                                    <v-btn 
+                                        absolute 
+                                        class="white--text" 
+                                        fab  
+                                        top
+                                        right
+                                        v-bind="attrs"
+                                        v-on="on"
+                                        :class="[ hover ? 'indigo accent-4' : 'light-blue accent-4']"
+                                    >
+                                        
+                                        <a :href="resource.downloadURL" :download="resource.title" style="color:white">
+                                            <v-icon dark>
+                                                mdi-download
+                                            </v-icon>
+                                        </a>
+
+                                    </v-btn>
+                            </template>
+                            <span> Download {{resource.title}}</span>
+                        </v-tooltip>
+
+
+                        <v-tooltip bottom>
+                            <template v-slot:activator="{ on, attrs }">
+                                    <v-btn 
+                                        absolute 
+                                        class="white--text mr-16" 
+                                        fab 
+                                        right
+                                        top
+                                        v-bind="attrs"
+                                        v-on="on"
+                                        :class="[ hover ? 'brown darken-4' : 'brown darken-1']"
+                                    >
+                                        
+                                        <a :href="resource.viewURL" :download="resource.title" style="color:white">
+                                            <v-icon dark>
+                                                mdi-open-in-new
+                                            </v-icon>
+                                        </a>
+
+                                    </v-btn>
+                            </template>
+                            <span> View {{resource.title}}</span>
+                        </v-tooltip>
+                    </v-row>
 
                     <h6 class="font-weight-light grey--text text-h6 mb-2" >
                         {{ resource.category}}
