@@ -4,7 +4,7 @@
   <Navigation></Navigation>
 
   <!-- RESOURCES -->
-    <v-main class="d-flex flex-row justify-center mt-4">
+    <v-main class="d-flex flex-row justify-center mt-4" data-content="main">
 
           <v-container class="d-flex flex-column justify-center align-center text-center">
             <v-col cols="10" lg="6" md="6" sm="8">
@@ -16,13 +16,13 @@
             </v-col>
           </v-container>
 
-      <v-container>
+      <v-container data-content="buttons">
         <HomepageButtons @showWorkshopResources="showWorkshopResources" @showGroupResources="showGroupResources"></HomepageButtons>
       </v-container>
 
-      <v-container transition="slide-x-transition" class="mt-10">
-        <NewMembers   v-if="shouldShowGroupResources"         ></NewMembers>
-        <Workshops    v-if="shouldShowWorkshopPresentations"  ></Workshops>
+      <v-container transition="slide-x-transition" class="mt-10 px-0">
+        <NewMembers   v-if="shouldShowGroupResources"></NewMembers>
+        <Workshops    v-if="shouldShowWorkshopPresentations"></Workshops>
       </v-container>
 
     </v-main>

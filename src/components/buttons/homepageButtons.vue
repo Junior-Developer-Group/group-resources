@@ -15,6 +15,7 @@
                     @click="showGroupResources"
                     ripple     
                     :class="{'white--text' : hover}"   
+                    data-button="members"
                 > 
                   NEW MEMBER RESOURCES
                   </v-btn>
@@ -36,6 +37,7 @@
                     @click="showWorkshopResources"
                     ripple
                     :class="{'white--text' : hover}"
+                    data-button="workshops"
                   > 
                     WORKSHOP RESOURCES
                 </v-btn>

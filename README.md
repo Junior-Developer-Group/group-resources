@@ -14,11 +14,7 @@ npm run serve
 ```
 npm run build
 ```
-
-### Lints and fixes files
+### Open Cypress [testing]
 ```
-npm run lint
+npx cypress open
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
