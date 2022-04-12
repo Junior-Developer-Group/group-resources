@@ -1,6 +1,6 @@
 <template>
       <!-- GETTING STARTED RESOURCES-->
-      <v-container>
+      <v-container class="px-0">
 
             <v-container class="d-flex justify-center align-center dark--text text-uppercase font-weight-bold">
               <h2 class="text-center">Helping you get started:</h2>
@@ -8,8 +8,8 @@
 
             <v-divider></v-divider>
 
-            <v-container class="d-flex flex-wrap justify-center align-center">
-              <v-col cols="8" xl="3" lg="4" md="4" sm="8" v-for="(groupRerource, index) in groupRerources" :key="index">
+            <v-container class="d-flex flex-wrap justify-center align-center" data-resource="new-members">
+              <v-col cols="12" xl="4" lg="4" md="5" sm="8" xs="12" v-for="(groupRerource, index) in groupRerources" :key="index">
                 <Card :resource="groupRerource"></Card>
               </v-col>
 
